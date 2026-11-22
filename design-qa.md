@@ -55,6 +55,11 @@ Allowed copy from the selected references: `RAMEN`, `DONE`, `DIFFERENT`, `ORDER 
 - Added the gold divider between favorites and promotions and used near-square campaign cards to match the approved reference.
 - Preserved positive tracking in `RAMEN`, `DONE`, and `DIFFERENT`; the I/F forms remain clearly separated.
 
+### Pass 4 — mid-width containment
+
+- User screenshots exposed pineapple-bowl and CTA overlap at approximately 1000–1118 CSS px, where the poster-scale hero was shorter than its contents.
+- Added a dedicated 861–1143px desktop breakpoint with a contained 340px hero. The bowl and both CTAs now finish above the category rail while the approved widescreen and mobile compositions remain unchanged.
+
 ## Implementation checklist
 
 - [x] Responsive desktop and mobile composition.

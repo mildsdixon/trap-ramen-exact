@@ -271,6 +271,14 @@ img { display: block; max-width: 100%; }
   }
 }
 
+/* Mid-width desktop needs more vertical room than the poster-scale widescreen. */
+@media (min-width: 861px) and (max-width: 1143px) {
+  .hero {
+    height: 340px;
+    overflow: hidden;
+  }
+}
+
 @media (max-width: 860px) {
   body { background-size: auto 1024px; }
   .site-header { height: 112px; grid-template-columns: 1fr auto auto; gap: 12px; padding: 8px 16px; }
