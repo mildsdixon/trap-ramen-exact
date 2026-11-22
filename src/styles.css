@@ -86,8 +86,8 @@ img { display: block; max-width: 100%; }
 }
 .hero::before { content: ""; position: absolute; inset: 5% 48% 9% -7%; z-index: -1; background: rgba(103,0,4,.42); clip-path: polygon(10% 0, 100% 7%, 88% 100%, 0 80%); transform: rotate(-5deg); }
 .hero-copy { position: relative; z-index: 3; }
-.hero h1 { margin: 0; font-family: var(--display); font-style: italic; text-transform: uppercase; transform: skew(-4deg); }
-.hero h1 span { display: block; width: max-content; line-height: .78; text-shadow: 6px 8px 0 rgba(0,0,0,.75); }
+.hero h1 { margin: 0; display: flex; flex-direction: column; gap: clamp(10px, .75vw, 14px); font-family: var(--display); font-style: italic; text-transform: uppercase; transform: skew(-4deg); }
+.hero h1 span { display: block; width: max-content; line-height: .88; text-shadow: 6px 8px 0 rgba(0,0,0,.75); }
 .hero-white { max-width: 100%; color: var(--white); font-size: clamp(6rem, 9vw, 10rem); letter-spacing: .012em; }
 .hero-gold { color: var(--gold); font-size: clamp(6.2rem, 9.3vw, 10.5rem); letter-spacing: .012em; }
 .hero-red { color: var(--red); font-size: clamp(5.2rem, 8vw, 9.2rem); letter-spacing: .015em; text-decoration: underline; text-decoration-thickness: .055em; text-underline-offset: .06em; }
@@ -177,11 +177,11 @@ img { display: block; max-width: 100%; }
 
   .hero {
     min-height: 0;
-    height: clamp(250px, 22.9vw, 365px);
+    height: clamp(340px, 27vw, 430px);
     grid-template-columns: .94fr 1.06fr;
     padding: 5px clamp(48px, 7.1vw, 108px) 9px;
   }
-  .hero h1 span { line-height: .72; }
+  .hero h1 span { line-height: .88; }
   .hero-white { font-size: clamp(6rem, 8.25vw, 8.65rem); }
   .hero-gold { font-size: clamp(5.8rem, 7.85vw, 8.2rem); }
   .hero-red { font-size: clamp(4.65rem, 6.55vw, 6.9rem); }
@@ -274,7 +274,7 @@ img { display: block; max-width: 100%; }
 /* Mid-width desktop needs more vertical room than the poster-scale widescreen. */
 @media (min-width: 861px) and (max-width: 1143px) {
   .hero {
-    height: 340px;
+    height: 360px;
     overflow: hidden;
   }
 }
@@ -290,10 +290,10 @@ img { display: block; max-width: 100%; }
   .order-button--header { min-height: 50px; padding: 9px 17px; font-size: 1.25rem; }
   .menu-button { width: 68px; display: grid; justify-items: center; gap: 2px; padding: 7px; border-left: 2px solid var(--gold); text-transform: uppercase; font-size: .78rem; font-weight: 900; }
   .menu-button svg { width: 36px; height: 36px; }
-  .hero { min-height: 660px; grid-template-columns: 1fr; align-items: start; padding: 42px 22px 28px; }
+  .hero { min-height: 710px; grid-template-columns: 1fr; align-items: start; padding: 42px 22px 28px; }
   .hero::before { inset: 4% 20% 35% -20%; }
   .hero-copy { position: static; z-index: 4; }
-  .hero h1 span { line-height: .74; }
+  .hero h1 span { line-height: .88; }
   .hero-white { font-size: clamp(5rem,19vw,8.4rem); }
   .hero-gold { font-size: clamp(5.2rem,20vw,8.8rem); }
   .hero-red { max-width: 95vw; font-size: clamp(4.35rem,16.3vw,7.4rem); letter-spacing: .02em; }
@@ -323,7 +323,7 @@ img { display: block; max-width: 100%; }
   .order-button--header svg { display: none; }
   .menu-button { width: 58px; }
   .menu-button svg { width: 31px; height: 31px; }
-  .hero { min-height: 570px; padding: 31px 14px 22px; }
+  .hero { min-height: 620px; padding: 31px 14px 22px; }
   .hero-white { font-size: clamp(4.15rem,21vw,6.4rem); }
   .hero-gold { font-size: clamp(4.35rem,22.2vw,6.7rem); }
   .hero-red { font-size: clamp(3.5rem,16.9vw,5.3rem); letter-spacing: .022em; }

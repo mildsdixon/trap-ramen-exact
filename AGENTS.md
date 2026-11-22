@@ -16,4 +16,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Desktop navigation labels are `MENU`, `ABOUT`, `CATERING`, and `CONTACT`, followed by the large `ORDER NOW` action.
 - Preserve the black, red, gold, and white street-poster palette, distressed texture, dominant pineapple bowl, horizontal category rail, fan-favorites rows, rotating campaign flyers, gallery strip, contact band, and large order CTA.
 - Keep the word “DIFFERENT” strongly tracked and legible. In particular, leave visible space between the I and F forms; never use the extreme negative tracking shown in the earlier draft.
+- Keep `RAMEN`, `DONE`, and `DIFFERENT` stacked as three distinct lines with visible vertical breathing room. The words must never touch or overlap at any breakpoint.
 - Keep commerce copy, navigation, prices, contact details, and controls code-native and interactive.

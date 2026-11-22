@@ -60,6 +60,11 @@ Allowed copy from the selected references: `RAMEN`, `DONE`, `DIFFERENT`, `ORDER 
 - User screenshots exposed pineapple-bowl and CTA overlap at approximately 1000–1118 CSS px, where the poster-scale hero was shorter than its contents.
 - Added a dedicated 861–1143px desktop breakpoint with a contained 340px hero. The bowl and both CTAs now finish above the category rail while the approved widescreen and mobile compositions remain unchanged.
 
+### Pass 5 — headline line separation
+
+- User feedback requested that `RAMEN`, `DONE`, and `DIFFERENT` remain stacked but no longer touch vertically.
+- Increased headline line-height from the compressed `.72–.78` range to `.88`, added a responsive 10–14px row gap, and increased hero heights across desktop and mobile breakpoints so the separated stack remains contained above the category rail.
+
 ## Implementation checklist
 
 - [x] Responsive desktop and mobile composition.
