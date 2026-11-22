@@ -11,6 +11,8 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 ## Trap Ramen design decisions
 
 - Build a responsive website, not a mobile-app shell. Mobile should closely match `design/mobile-reference.png`; desktop should recompose the same poster language using `design/desktop-reference.png`.
+- Treat the approved desktop reference as a one-screen poster composition at 1487 × 1058: compact header, split hero, category rail, two-column favorites/campaign section, gallery strip, and contact/order bar should all preserve those proportions.
+- Desktop navigation labels are `MENU`, `ABOUT`, `CATERING`, and `CONTACT`, followed by the large `ORDER NOW` action.
 - Preserve the black, red, gold, and white street-poster palette, distressed texture, dominant pineapple bowl, horizontal category rail, fan-favorites rows, rotating campaign flyers, gallery strip, contact band, and large order CTA.
 - Keep the word “DIFFERENT” strongly tracked and legible. In particular, leave visible space between the I and F forms; never use the extreme negative tracking shown in the earlier draft.
 - Keep commerce copy, navigation, prices, contact details, and controls code-native and interactive.

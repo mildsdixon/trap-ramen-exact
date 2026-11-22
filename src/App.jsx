@@ -73,8 +73,9 @@ function Header({ menuOpen, onToggle }) {
       <a className="brand-link" href="#top" aria-label="Trap Ramen home"><Brand /></a>
       <nav className={menuOpen ? "site-nav is-open" : "site-nav"} aria-label="Main navigation">
         <a href="#menu" onClick={close}>Menu</a>
-        <a href="#specials" onClick={close}>Specials</a>
-        <a href="#visit" onClick={close}>Visit</a>
+        <a href="#top" onClick={close}>About</a>
+        <a href={phoneHref} onClick={close}>Catering</a>
+        <a href="#visit" onClick={close}>Contact</a>
       </nav>
       <a className="order-button order-button--header" href={phoneHref}>Order now <ChevronRight /></a>
       <button className="menu-button" type="button" onClick={onToggle} aria-expanded={menuOpen} aria-label={menuOpen ? "Close menu" : "Open menu"}>

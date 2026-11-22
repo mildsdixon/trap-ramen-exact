@@ -26,7 +26,7 @@ The final desktop capture preserves the reference structure: logo/header/order C
 
 ## Above-the-fold copy diff
 
-Allowed copy from the selected references: `RAMEN`, `DONE`, `DIFFERENT`, `ORDER NOW`, `VIEW MENU`, `MENU`, `SPECIALS`, and `VISIT`. The implementation adds no unapproved hero messaging. Desktop navigation omits the generated concept’s `ABOUT`, `CATERING`, and `CONTACT` labels because they were not present in the accepted mobile reference and no destination sections were requested.
+Allowed copy from the selected references: `RAMEN`, `DONE`, `DIFFERENT`, `ORDER NOW`, `VIEW MENU`, `MENU`, `ABOUT`, `CATERING`, and `CONTACT`. The implementation adds no unapproved hero messaging and now uses the desktop reference’s complete navigation labels.
 
 ## Findings
 
@@ -46,6 +46,14 @@ Allowed copy from the selected references: `RAMEN`, `DONE`, `DIFFERENT`, `ORDER 
 - The CTA stack now sits beneath the headline and food image with clear separation.
 - Increased `RAMEN` and `DONE` tracking to `.012em`, `DIFFERENT` to `.015em` desktop / `.02em–.022em` mobile.
 - Verified desktop and mobile full-page captures, mobile menu open/close, Rice tab state change, promotion next control, telephone/location/Instagram links, and zero browser console errors.
+
+### Pass 3 — exact desktop composition
+
+- Re-proportioned desktop at the reference’s 1487 × 1058 artboard: compact 6% header, 23% hero, slim category rail, equal favorites/promotions columns, gallery strip, and compact contact/order footer.
+- At the reference aspect ratio, the final document height is 815 CSS px against an 814 CSS px viewport after browser scaling—effectively a one-screen composition with no meaningful desktop scroll.
+- Restored the exact desktop navigation labels: Menu, About, Catering, Contact.
+- Added the gold divider between favorites and promotions and used near-square campaign cards to match the approved reference.
+- Preserved positive tracking in `RAMEN`, `DONE`, and `DIFFERENT`; the I/F forms remain clearly separated.
 
 ## Implementation checklist
 
